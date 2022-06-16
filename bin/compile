@@ -128,6 +128,7 @@ if [ -z "$WASM_PACK" ]; then
     echo "-----> Using wasm-pack to install"
     ./wasm-pack.sh -y
     rm wasm-pack.sh
+fi
 
 # This is where we will cache our Rust output.  Note the suggestions at
 # https://github.com/alexcrichton/cargo/commit/014765f788ca1c2476936835ca32cc2746f99b42
