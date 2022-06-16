@@ -126,6 +126,7 @@ if [ -z "$WASM_PACK" ]; then
     curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf > wasm-pack.sh
     chmod u+x wasm-pack.sh
     echo "-----> Using wasm-pack to install"
+    rustup target add wasm32-unknown-unknown
     ./wasm-pack.sh -y
     rm wasm-pack.sh
 fi
